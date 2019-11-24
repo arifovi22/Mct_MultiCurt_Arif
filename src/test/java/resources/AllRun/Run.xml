@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Run" thread-count="4">
+
+	<!-- Test -->
+	<test name="AllTestFeature">
+		<classes>
+			<class name="testRun.BaseTest">
+				<methods>
+					<include name="signIn" />
+<!--  -->					<include name="logOut" />
+<!-- 					<include name="signUP" /> -->
+<!-- 					<include name="myAccount" /> -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<!-- Test -->
+	<!-- <test name="MCT Regression Test Cases">
+		<classes>
+			<class name="mct.testrunner.RegressionWithTestNG">
+				<methods>
+					<include name="myAccountOptions" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+</suite>
